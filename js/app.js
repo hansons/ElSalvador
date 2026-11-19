@@ -180,6 +180,7 @@
     window: 'all',
     filters: {},
     territory: true,
+    messages: true,
     selected: null
   };
   CAT_ORDER.forEach(function (c) { state.filters[c] = true; });
@@ -301,6 +302,77 @@
     return o;
   });
 
+  // ---------- messages: what the key voices said, as cards that slide in when the clock reaches them ----------
+  // DATA.messages: [{ id, date, speaker, role, side, platform, media, lang, text (verbatim), translation,
+  //   translation_by, url, event_id, sources, confidence, notes }]. Only entries with verbatim text are shown.
+  var SIDE = {
+    'el-salvador':      { label: 'El Salvador',          color: '#4C8DF6' },
+    'security-forces':  { label: 'Security forces',      color: '#7FA7E8' },
+    'haiti-government': { label: 'Haitian government',   color: '#A9B4C2' },
+    'gang':             { label: 'Gang',                 color: '#E5484D' },
+    'international':    { label: 'International',        color: '#3CC4B0' },
+    'civil-society':    { label: 'Civil society',        color: '#F5B83D' }
+  };
+  var PLATFORM = { x: 'X post', tiktok: 'TikTok', youtube: 'YouTube', video: 'Video', speech: 'Speech', 'press-conference': 'Press conference', statement: 'Statement', interview: 'Interview', letter: 'Letter' };
+  var messages = (DATA.messages || []).filter(function (m) { return m && m.date && (m.text || m.translation) && m.speaker; }).map(function (m) {
+    var o = Object.assign({}, m);
+    o.day = dayNum(m.date);
+    return o;
+  }).sort(function (a, b) { return a.day - b.day; });
+  var msgDismissed = {};
+  var msgShown = '';
+
+  function initials(name) { return name.split(/\s+/).filter(Boolean).slice(0, 2).map(function (w) { return w[0]; }).join('').toUpperCase(); }
+  function messageCard(m, compact) {
+    var side = SIDE[m.side] || { label: '', color: '#8fa0b5' };
+    var url = safeUrl(m.url);
+    var meta = [PLATFORM[m.platform] || m.platform, longDate(m.day)].filter(Boolean).join(' · ');
+    var card = el('article', { class: 'msg' + (compact ? ' msg-compact' : ''), style: '--side:' + side.color }, [
+      el('header', null, [
+        el('span', { class: 'msg-av', 'aria-hidden': 'true', text: initials(m.speaker) }),
+        el('div', { class: 'msg-who' }, [
+          el('strong', { text: m.speaker }),
+          el('span', { text: m.role || side.label })
+        ]),
+        m.media === 'video' ? el('span', { class: 'msg-badge', text: '▶ Video' }) : null
+      ]),
+      m.text ? el('blockquote', { lang: m.lang || null, text: m.text }) : el('blockquote', { lang: 'en', text: m.translation }),
+      m.text && m.translation ? el('p', { class: 'msg-tr', text: m.translation }) : null,
+      m.text ? null : el('p', { class: 'msg-tr', text: 'Original wording not published; English as reported by ' + (m.translation_by || 'the press') + '.' }),
+      el('footer', null, [
+        el('span', { text: meta + (m.text && m.translation && m.translation_by ? ' · translation: ' + m.translation_by : '') + (m.confidence === 'low' ? ' · wording not confirmed' : '') }),
+        url ? el('a', { href: url, target: '_blank', rel: 'noopener noreferrer', text: 'Open ↗' }) : null
+      ])
+    ]);
+    return card;
+  }
+
+  // While playing, a card stays up for about six seconds of real time; paused, the last three days' messages show.
+  function renderMessages(day) {
+    var box = $('messages');
+    if (!box) return;
+    var hold = state.playing ? Math.max(1, Math.round(6 * state.speed)) : 3;
+    var live = state.messages ? messages.filter(function (m) {
+      return m.day <= day && day - m.day < hold && !msgDismissed[m.id];
+    }).slice(-2).reverse() : [];
+    var key = live.map(function (m) { return m.id; }).join('|');
+    if (key === msgShown) return;
+    msgShown = key;
+    box.textContent = '';
+    live.forEach(function (m) {
+      var card = messageCard(m, false);
+      var close = el('button', { type: 'button', class: 'msg-x', 'aria-label': 'Dismiss', text: '×' });
+      close.addEventListener('click', function (ev) { ev.stopPropagation(); msgDismissed[m.id] = true; msgShown = ''; renderMessages(Math.floor(state.t)); });
+      card.insertBefore(close, card.firstChild);
+      if (m.event_id && events.some(function (e) { return e.id === m.event_id; })) {
+        var go = el('button', { type: 'button', class: 'msg-go', text: 'See the event' });
+        go.addEventListener('click', function () { select(m.event_id, true); });
+        card.querySelector('footer').appendChild(go);
+      }
+      box.appendChild(card);
+    });
+  }
+
   // ---------- visibility ----------
   function rangeEnd() { return lastDay + 0.999; }
   function isVisible(e, day) {
@@ -381,6 +453,7 @@
       if (!show && on) controlLayer.removeLayer(a.shape);
     });
 
+    renderMessages(day);
     renderFactsCount(day);
     if (!state.selected) renderFeed(day);
   }
@@ -684,6 +757,12 @@
     fact('Notes', e.notes);
     if (facts.children.length) d.appendChild(facts);
 
+    var said = messages.filter(function (m) { return m.event_id === e.id; });
+    if (said.length) {
+      d.appendChild(el('h3', { text: 'What was said' }));
+      said.forEach(function (m) { d.appendChild(messageCard(m, true)); });
+    }
+
     var srcs = (e.sources || []).filter(function (s) { return safeUrl(s.url); });
     d.appendChild(el('h3', { text: srcs.length ? 'Sources and posts' : 'No sources attached yet' }));
     srcs.forEach(function (s) { d.appendChild(sourceCard(s, e)); });
@@ -810,6 +889,8 @@
     } else {
       writeUrl();
     }
+    msgShown = '';
+    renderMessages(Math.floor(state.t));
   }
   function tick(ts) {
     if (!state.playing) return;
@@ -867,6 +948,8 @@
     $('window').addEventListener('change', function (ev) { state.window = ev.target.value; renderDay(true); });
     $('territory').addEventListener('change', function (ev) { state.territory = ev.target.checked; renderDay(true); });
     if (!territory.length && !controlAreas.length) $('territory').parentNode.hidden = true;
+    $('show-messages').addEventListener('change', function (ev) { state.messages = ev.target.checked; msgShown = ''; renderMessages(Math.floor(state.t)); });
+    if (!messages.length) $('show-messages').parentNode.hidden = true;
     if (!controlAreas.length) document.querySelector('.zone-key').hidden = true;
     if (!controlAreas.some(function (a) { return a.status === 'liberated'; })) document.querySelector('.sw-lib').parentNode.hidden = true;
     $('scrub').addEventListener('input', function (ev) { setPlaying(false); seek(state.range.start + (+ev.target.value)); });

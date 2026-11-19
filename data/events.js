@@ -1976,6 +1976,911 @@ window.HAITI_TRACKER = {
       "notes": "No route or neighbourhood given. Single wire source (AP) for the second-day marches."
     }
   ],
+  "messages": [
+    {
+      "id": "2026-10-21-bukele-operation-announcement",
+      "date": "2026-10-21",
+      "speaker": "Nayib Bukele",
+      "role": "President of El Salvador",
+      "side": "el-salvador",
+      "platform": "x",
+      "media": "video",
+      "lang": "ht",
+      "text": "Pou chèf gang yo ak manm gang yo k ap kenbe kat konpatriyòt nou yo an otaj ann Ayiti:\n\nMesye nou kidnape yo pa konbatan. Yo se teknisyen nan domèn avyasyon ki fè pati misyon nou ann Ayiti, nan kad yon misyon entènasyonal. Misyon nou an gen sèlman pilòt ak pèsonèl teknik, ki gen kòm travay prensipal fè evakyasyon medikal epi sove lavi moun, pa fè lagè.\n\nMen, nou te kidnape yo yon fason lach pandan yo t ap retounen apre yo te fin achte manje nan yon makèt nan zòn nan.\n\nSe poutèt sa, jodi a nou te lanse yon operasyon militè pou pote yo sekou. Nou gen yon sèl objektif: fè kat konpatriyòt nou yo retounen lakay yo vivan, san okenn mal.\n\nMen, mwen vle pou nou menm, chèf gang yo, konprann yon bagay byen klè: atak jodi a pa anyen devan sa k ap vini si nou pa remèt toule kat otaj yo vivan.\n\nEpi pa pran pawòl nou yo pou menas san fondman. Nou deja fini ak gang yo nan El Salvador, e nou kapab fini ak nou tou.\n\nNou toujou gen tan pou evite sa.\n\nRemèt nou kat konpatriyòt nou yo vivan, san okenn mal, epi tout bagay ap retounen jan sa te ye anvan kidnaping lan.\n\nDesizyon an nan men nou.",
+      "translation": "To the gang leaders and gang members holding our four compatriots hostage in Haiti:\n\nThe men you kidnapped are not combatants. They are aviation technicians who are part of our mission in Haiti, within the framework of an international mission. Our mission has only pilots and technical personnel, whose main work is carrying out medical evacuations and saving lives, not making war.\n\nBut you kidnapped them in a cowardly way while they were returning after buying food at a market in the area.\n\nThat is why today we launched a military operation to rescue them. We have a single objective: to bring our four compatriots home alive, without any harm.\n\nBut I want you, the gang leaders, to understand one thing very clearly: today's attack is nothing compared to what is coming if you do not hand back all four hostages alive.\n\nAnd do not take our words as empty threats. We have already finished with the gangs in El Salvador, and we can finish with you too.\n\nWe still have time to avoid this.\n\nReturn our four compatriots to us alive, without any harm, and everything will go back to the way it was before the kidnapping.\n\nThe decision is in your hands.",
+      "translation_by": "map editors (checked against AP's English excerpts and Emol/El Diario de Hoy Spanish renderings)",
+      "url": "https://x.com/nayibbukele/status/2112981920741310695",
+      "event_id": "2026-10-21-bukele-announces-operation",
+      "sources": [
+        {
+          "title": "Post by @nayibbukele",
+          "publisher": "X (@nayibbukele)",
+          "url": "https://x.com/nayibbukele/status/2112981920741310695",
+          "date": "2026-10-21",
+          "type": "x"
+        },
+        {
+          "title": "Bukele says military operation launched to rescue Salvadorans held by gangs in Haiti",
+          "publisher": "AP via ClickOrlando",
+          "url": "https://www.clickorlando.com/news/world/2026/10/21/bukele-says-military-operation-launched-to-rescue-salvadorans-held-by-gangs-in-haiti/",
+          "date": "2026-10-21",
+          "type": "article"
+        },
+        {
+          "title": "Bukele a pandillas de Haití «Devuélvannos a los soldados vivos, sin ningún daño»",
+          "publisher": "El Diario de Hoy",
+          "url": "https://www.elsalvador.com/?p=1299816",
+          "date": "2026-10-21",
+          "type": "article"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Full text read from the post itself via fxtwitter API (api.fxtwitter.com), which returns the post's own text; posted 18:58 UTC 21 Oct with a 60-second video. The post is in Haitian Creole; the Spanish and English wordings in the press are translations. Telemetro and El Diario de Hoy reproduce the Creole opening line."
+    },
+    {
+      "id": "2026-10-22-paliza-border",
+      "date": "2026-10-22",
+      "speaker": "José Ignacio Paliza",
+      "role": "Minister of the Presidency, Dominican Republic",
+      "side": "international",
+      "platform": "press-conference",
+      "media": "text",
+      "lang": "es",
+      "text": "Cualquier elemento que pueda necesitarse adicionalmente en el transcurso de los próximos días, semanas y meses el Gobierno dominicano lo hará para proteger nuestra integridad. … hasta ahora en el trayecto de este conflicto haitiano, de la seguridad haitiana, la República Dominicana no ha tenido ningún incidente que reportar sobre la integridad de la seguridad del Estado dominicano.",
+      "translation": "Any additional element that may be needed over the coming days, weeks and months, the Dominican government will provide to protect our integrity. … so far in the course of this Haitian conflict, of Haitian security, the Dominican Republic has had no incident to report concerning the integrity of the security of the Dominican State.",
+      "translation_by": "map editors",
+      "url": "https://www.infobae.com/america/agencias/2026/10/24/republica-dominicana-envia-militares-a-frontera-en-medio-de-la-creciente-tension-en-haiti/",
+      "event_id": "2026-10-24-dominican-border-reinforced",
+      "sources": [
+        {
+          "title": "República Dominicana envía militares a frontera en medio de la creciente tensión en Haití",
+          "publisher": "EFE via Infobae",
+          "url": "https://www.infobae.com/america/agencias/2026/10/24/republica-dominicana-envia-militares-a-frontera-en-medio-de-la-creciente-tension-en-haiti/",
+          "date": "2026-10-24",
+          "type": "article"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Remarks on Thursday 22 Oct as quoted by EFE; context not recorded (press briefing assumed)."
+    },
+    {
+      "id": "2026-10-23-bukele-god-will-grant-victory",
+      "date": "2026-10-23",
+      "speaker": "Nayib Bukele",
+      "role": "President of El Salvador",
+      "side": "el-salvador",
+      "platform": "x",
+      "media": "text",
+      "lang": "es",
+      "text": "Muchos mensajes, análisis y comentarios como este, asegurando que las pandillas de Haití no son como las de El Salvador; que son sanguinarias, que están fuertemente armadas, que nadie ha podido vencerlas, que todas las misiones han fracasado, que estamos cayendo en una trampa, que no sabemos a lo que nos enfrentamos, que será nuestra ruina, que vamos camino a nuestro Waterloo.\n\nPero cuando Dios nos conceda la victoria, los mismos que hoy dicen todo eso cambiarán su discurso. Dirán que siempre fue fácil, que cualquiera podía hacerlo, que las pandillas de Haití no eran tan peligrosas como se pensaba.\n\nEn fin, nunca los hemos escuchado y no vamos a empezar ahora.\n\nTodos los que se han enlistado son creyentes y hemos encomendado esta misión a Dios, mientras que las pandillas de Haití son satánicas y es de conocimiento público que hacen sacrificios humanos.\n\nDios nos concederá la victoria. El Creador del Universo está con nosotros.\n\nDeuteronomio 28:7\n“Jehová derrotará a tus enemigos que se levantaren contra ti; por un camino saldrán contra ti, y por siete caminos huirán de delante de ti”.",
+      "translation": "Many messages, analyses and comments like this one, insisting that Haiti's gangs are not like El Salvador's; that they are bloodthirsty, heavily armed, that no one has been able to defeat them, that every mission has failed, that we are falling into a trap, that we do not know what we are up against, that it will be our ruin, that we are heading for our Waterloo.\n\nBut when God grants us victory, the same people saying all this today will change their tune. They will say it was always easy, that anyone could have done it, that Haiti's gangs were not as dangerous as people thought.\n\nAnyway, we have never listened to them and we are not going to start now.\n\nEveryone who has enlisted is a believer and we have entrusted this mission to God, while Haiti's gangs are satanic and it is public knowledge that they carry out human sacrifices.\n\nGod will grant us victory. The Creator of the Universe is with us.\n\nDeuteronomy 28:7\n\"The Lord shall cause thine enemies that rise up against thee to be smitten before thy face: they shall come out against thee one way, and flee before thee seven ways.\"",
+      "translation_by": "map editors (Bible verse: King James Version)",
+      "url": "https://x.com/nayibbukele/status/2113691868424740980",
+      "event_id": "2026-10-23-lanmo-san-jou-video",
+      "sources": [
+        {
+          "title": "Post by @nayibbukele (quoting @drhsalazar, 'Bukele y su Waterloo')",
+          "publisher": "X (@nayibbukele)",
+          "url": "https://x.com/nayibbukele/status/2113691868424740980",
+          "date": "2026-10-23",
+          "type": "x"
+        },
+        {
+          "title": "Wilson Joseph 'Lanmò San Jou' ... se dirige al presidente salvadoreño",
+          "publisher": "La Prensa Gráfica",
+          "url": "https://www.laprensagrafica.com/internacional/wilson-joseph-conocido-como-lanm-san-jou-y-senalado-de-ser-lider-de-pandilla-haitiana-dice-estar-esperando-a-presidente-salvadoreno-20261023-0028.html",
+          "date": "2026-10-23",
+          "type": "article"
+        },
+        {
+          "title": "Bukele confía en vencer pandillas haitianas y rescatar a militares desaparecidos",
+          "publisher": "Diario El Mundo",
+          "url": "https://diario.elmundo.sv/nacionales/bukele-confia-en-vencer-pandillas-haitianas-y-rescatar-a-militares-desaparecidos",
+          "date": "2026-10-23",
+          "type": "article"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Text read from the post itself via fxtwitter API (api.fxtwitter.com), which returns the post's own text; 17:59 UTC 23 Oct. It quotes a commentator's 'Waterloo' column, not the Lanmò San Jou video directly, though La Prensa Gráfica presented it as Bukele's reaction to that video. Linked to the video event for timing."
+    },
+    {
+      "id": "2026-10-24-bukele-not-our-men",
+      "date": "2026-10-24",
+      "speaker": "Nayib Bukele",
+      "role": "President of El Salvador",
+      "side": "el-salvador",
+      "platform": "x",
+      "media": "text",
+      "lang": "es",
+      "text": "No son nuestros hombres.\n\nUna ONG entregó restos humanos en el aeropuerto, asegurando que pertenecían a nuestros cuatro aerotécnicos.\n\nSin embargo, los restos corresponden a un niño, a un hombre de una estatura considerablemente mayor que la de nuestros aerotécnicos y a una persona que portaba parte de un uniforme de un ejército que no es el nuestro.\n\nEntre los restos también se encontraron carnets de identificación y uniformes militares de otros países.",
+      "translation": "They are not our men.\n\nAn NGO delivered human remains at the airport, claiming they belonged to our four aviation technicians.\n\nHowever, the remains correspond to a child, a man of considerably greater height than our aviation technicians, and a person who was wearing part of a uniform of an army that is not ours.\n\nAmong the remains, identity cards and military uniforms from other countries were also found.",
+      "translation_by": "map editors (first two sentences of the third paragraph match the Haitian Times' English rendering)",
+      "url": "https://x.com/nayibbukele/status/2114148021910765740",
+      "event_id": "2026-10-24-remains-handed-over",
+      "sources": [
+        {
+          "title": "Post by @nayibbukele (quoting @FrancesRobles / NYT)",
+          "publisher": "X (@nayibbukele)",
+          "url": "https://x.com/nayibbukele/status/2114148021910765740",
+          "date": "2026-10-24",
+          "type": "x"
+        },
+        {
+          "title": "Bukele denies bodies found in Haiti are those of Salvadoran soldiers",
+          "publisher": "The Haitian Times",
+          "url": "https://haitiantimes.com/2026/10/25/bukele-denies-bodies-haiti-anti-gang-force-salvadoran-soldiers/",
+          "date": "2026-10-25",
+          "type": "article"
+        },
+        {
+          "title": "'No son nuestros hombres': Bukele niega ...",
+          "publisher": "Meganoticias",
+          "url": "https://www.meganoticias.cl/mundo/534767-bukele-niega-que-encuentren-muertos-a-salvadorenos-emboscados-en-haiti-25-10-2026.html",
+          "date": "2026-10-25",
+          "type": "article"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Text read from the post itself via fxtwitter API (api.fxtwitter.com), which returns the post's own text; 00:12 UTC 25 Oct = evening of 24 Oct in El Salvador. Quote-posts a New York Times reporter's 'BREAKING' post saying the bodies were believed to be the four soldiers. Two photos attached."
+    },
+    {
+      "id": "2026-10-25-gsf-remains-statement",
+      "date": "2026-10-25",
+      "speaker": "Gang Suppression Force",
+      "role": "UN-authorized multinational force in Haiti (official account)",
+      "side": "security-forces",
+      "platform": "x",
+      "media": "text",
+      "lang": "en",
+      "text": "The #GSF confirms that it has received, through a third-party humanitarian organization, remains suspected of being those of the four personnel from the Salvadoran contingent currently missing.\nAt this stage, the GSF is not in a position to confirm that the remains are those of the missing personnel.\n\nThe GSF stands firm and determined and will communicate further information through its official channels once verified information becomes available.\n\nFull statement:",
+      "translation": null,
+      "translation_by": null,
+      "url": "https://x.com/GSForceHaiti/status/2114329667536580968",
+      "event_id": "2026-10-24-remains-handed-over",
+      "sources": [
+        {
+          "title": "Post by @GSForceHaiti",
+          "publisher": "X (@GSForceHaiti)",
+          "url": "https://x.com/GSForceHaiti/status/2114329667536580968",
+          "date": "2026-10-25",
+          "type": "x"
+        },
+        {
+          "title": "Bukele denies bodies found in Haiti are those of Salvadoran soldiers",
+          "publisher": "The Haitian Times",
+          "url": "https://haitiantimes.com/2026/10/25/bukele-denies-bodies-haiti-anti-gang-force-salvadoran-soldiers/",
+          "date": "2026-10-25",
+          "type": "article"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Text read from the post itself via fxtwitter API (api.fxtwitter.com), which returns the post's own text; 12:14 UTC 25 Oct. Full statement attached as an image (not read)."
+    },
+    {
+      "id": "2026-10-29-bukele-not-an-invasion",
+      "date": "2026-10-29",
+      "speaker": "Nayib Bukele",
+      "role": "President of El Salvador",
+      "side": "el-salvador",
+      "platform": "x",
+      "media": "video",
+      "lang": "ht",
+      "text": "Pèp ayisyen,\n\nNou prèske fin deplwaye sòlda nou yo ak ekipman nou yo sou tè Ayiti. Sa a se pa yon operasyon kont pèp ayisyen an, ni yon envazyon peyi Ayiti. Nou pa yon gwo pisans. Nou pa gen okenn enterè ni pou nou vin domine pèp ayisyen an, ni pou nou mete men sou richès Ayiti.\n\nNou se yon peyi modès k ap devlope. Sèl sa nou vle, se pou kat teknisyen avyasyon nou yo tounen lakay yo. Epi n ap bay gang yo yon leson, gang sa yo k ap fè pèp ayisyen an soufri, ki touye moun pèp la renmen yo, k ap anpeche l viv yon lavi nòmal, lib, san laperèz.\n\nSe prèske nou menm sèl k ap peye pou operasyon sa a. Menmsi nou resevwa yon ti èd lojistik nan men kèk lòt peyi, se ak pwòp ti kès nou n ap kouvri 90% nan depans yo.\n\nSa koute nou chè, men nou te aprann nan pwòp soufrans nou: jistis ak lapè pa gen pri. Nou te pase nan menm soufrans Ayiti ap travèse jodi a. Nou te viv yon beny san ki te pi terib toujou pase sa pèp ayisyen an ap sibi kounye a. Nou konnen sa sa vle di: viv nan laperèz, pa fè politisyen konfyans, pa kwè okenn moun ki pwomèt l ap ede w. Paske pèsonn pa t vin ede nou, e moun ki te vini yo pa t gen bon entansyon nan kè yo.\n\nMen nou te rive chape anba sa. Apre 200 lane soufrans, finalman n ap viv nan lapè, e jodi a nou se peyi ki gen plis sekirite sou kontinan an.\n\nNou pa vin ann Ayiti pou nou touche lajan, paske pèsonn pa peye nou pou sa. Nou vin ann Ayiti pou nou goumen kont mechan yo.\n\nMen sa m ap mande nou: fè nou konfyans, lapriyè sèl vrè Bondye a, epi mande L pou L geri Ayiti.\n\n“Lè sa a si pèp ki pote non m lan lapriyè nan pye m, si yo soumèt devan mwen, si yo pran chache m ankò, si yo vire do bay vye peche yo t'ap fè yo, m'ap tande yo nan syèl kote m ye a, m'ap padonnen peche yo, m'ap fè peyi a kanpe ankò.”\n\n2 Kwonik 7:14\n\nEde nou ede Ayiti.\n\nEpi lè misyon nou an fini, n ap tounen lakay nou. Petèt jenerasyon Ayisyen k ap vini yo ap sonje nou kòm zanmi ki te vin ede yon lè.",
+      "translation": "People of Haiti,\n\nWe have almost finished deploying our soldiers and our equipment on Haitian soil. This is not an operation against the Haitian people, nor an invasion of Haiti. We are not a great power. We have no interest in coming to dominate the Haitian people, nor in laying hands on Haiti's wealth.\n\nWe are a modest, developing country. All we want is for our four aviation technicians to come home. And we are going to teach the gangs a lesson, these gangs that make the Haitian people suffer, that kill the people they love, that stop them living a normal, free life without fear.\n\nWe are almost alone in paying for this operation. Even though we receive a little logistical help from a few other countries, we are covering 90% of the costs from our own small treasury.\n\nIt costs us dearly, but we learned from our own suffering: justice and peace have no price. We went through the same suffering Haiti is going through today. We lived through a bloodbath even more terrible than what the Haitian people are enduring now. We know what it means: living in fear, not trusting politicians, not believing anyone who promises to help you. Because nobody came to help us, and those who did come did not have good intentions in their hearts.\n\nBut we managed to escape it. After 200 years of suffering, we are finally living in peace, and today we are the safest country on the continent.\n\nWe did not come to Haiti to make money, because nobody is paying us for this. We came to Haiti to fight the wicked.\n\nHere is what I ask of you: trust us, pray to the one true God, and ask Him to heal Haiti.\n\n\"If my people, which are called by my name, shall humble themselves, and pray, and seek my face, and turn from their wicked ways; then will I hear from heaven, and will forgive their sin, and will heal their land.\"\n\n2 Chronicles 7:14\n\nHelp us help Haiti.\n\nAnd when our mission is over, we will go back home. Perhaps the coming generations of Haitians will remember us as friends who once came to help.",
+      "translation_by": "map editors (Bible verse: King James Version)",
+      "url": "https://x.com/nayibbukele/status/2115915319134855447",
+      "event_id": "2026-10-28-el-salvador-confirms-2000-troops",
+      "sources": [
+        {
+          "title": "Post by @nayibbukele",
+          "publisher": "X (@nayibbukele)",
+          "url": "https://x.com/nayibbukele/status/2115915319134855447",
+          "date": "2026-10-29",
+          "type": "x"
+        },
+        {
+          "title": "Bukele a haitianos: 'Esto no es una operación contra el pueblo haitiano ni una invasión a Haití'",
+          "publisher": "Diario El Mundo",
+          "url": "https://diario.elmundo.sv/politica/bukele-a-haitianos-esto-no-es-una-operacion-contra-el-pueblo-haitiano-ni-una-invasion-a-haiti",
+          "date": "2026-10-29",
+          "type": "article"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Full text read from the post itself via fxtwitter API (api.fxtwitter.com), which returns the post's own text; 21:14 UTC 29 Oct, with a 50-second video. Source of the '90% of the cost' line in the events file."
+    },
+    {
+      "id": "2026-10-29-bukele-press-conference-we-leave-that-day",
+      "date": "2026-10-29",
+      "speaker": "Nayib Bukele",
+      "role": "President of El Salvador",
+      "side": "el-salvador",
+      "platform": "press-conference",
+      "media": "video",
+      "lang": "es",
+      "text": "¿Cuánto tiempo vamos a pasar ahí? Pues, lo que dure la misión, nosotros no tenemos ninguna intención de quedarnos permanentemente ahí y, si se nos entregan los cuatro aerotécnicos mañana, nosotros mañana mismo nos vamos en la tarde. Pero, si no, vamos a ir entrando poco a poco y, así como les dije en el primer mensaje, si acabamos con las pandillas de acá, podemos acabar con ellos, es decisión de ellos si quieren que los acabemos o no. … Ahora bien, si no los entregan por las buenas, los vamos a rescatar por las malas y en el camino los vamos a ir acabando. … Nosotros vamos a llegar a cumplir nuestra misión y luego nos vamos a ir como vinimos, sin nada. Nosotros no tenemos interés en controlar Haití, ni en sus recursos naturales, ni en sus riquezas, vamos a ir como llegamos, con nuestras cosas.",
+      "translation": "How long are we going to spend there? Well, as long as the mission lasts. We have no intention of staying there permanently, and if the four aviation technicians are handed over to us tomorrow, we leave tomorrow afternoon. But if not, we will go in little by little and, as I told them in the first message, if we finished off the gangs here, we can finish them off; it is their decision whether they want us to finish them off or not. … Now, if they do not hand them over the easy way, we will rescue them the hard way, and along the way we will be finishing them off. … We are going to accomplish our mission and then leave the way we came, with nothing. We have no interest in controlling Haiti, nor its natural resources, nor its wealth; we will leave as we arrived, with our own things.",
+      "translation_by": "map editors",
+      "url": "https://diario.elmundo.sv/politica/bukele-si-nos-entregan-a-nuestros-aerotecnicos-vivos-ese-mismo-dia-nos-regresamos-de-haiti",
+      "event_id": "2026-10-28-el-salvador-confirms-2000-troops",
+      "sources": [
+        {
+          "title": "Bukele: 'Si nos entregan a nuestros aerotécnicos vivos, ese mismo día nos regresamos' de Haití",
+          "publisher": "Diario El Mundo",
+          "url": "https://diario.elmundo.sv/politica/bukele-si-nos-entregan-a-nuestros-aerotecnicos-vivos-ese-mismo-dia-nos-regresamos-de-haiti",
+          "date": "2026-10-29",
+          "type": "article"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Spoken at a joint press conference with Peru's president Keiko Fujimori at Casa Presidencial, San Salvador, evening of 29 Oct. Wording as transcribed by Diario El Mundo (three separate quoted passages, joined here with …); not checked against video."
+    },
+    {
+      "id": "2026-10-31-bukele-bombs-denial",
+      "date": "2026-10-31",
+      "speaker": "Nayib Bukele",
+      "role": "President of El Salvador",
+      "side": "el-salvador",
+      "platform": "x",
+      "media": "text",
+      "lang": "en",
+      "text": "Bombs?\n\nOur mission doesn't even have bombs at its disposal.\n\nAerial bombardments? Helicopter gunship attacks?\n\nOur attack helicopters didn't arrive in Haiti until October 29. Their arrival was widely covered by the media, with plenty of videos and social media posts documenting it.\n\nYet this “report” was published a day before our helicopters even arrived. And as of today, they haven't flown a single mission.\n\nThese NGOs lie with impunity, while wielding enormous influence over international organizations.\n\nThey are nothing more than lobbying firms for criminals and cartels, masquerading as humanitarian organizations.",
+      "translation": null,
+      "translation_by": null,
+      "url": "https://x.com/nayibbukele/status/2116635646739554417",
+      "event_id": "2026-10-28-una-haiti-letter",
+      "sources": [
+        {
+          "title": "Post by @nayibbukele (quoting @DropSiteNews on the UNA-Haiti letter)",
+          "publisher": "X (@nayibbukele)",
+          "url": "https://x.com/nayibbukele/status/2116635646739554417",
+          "date": "2026-10-31",
+          "type": "x"
+        },
+        {
+          "title": "Bukele desmiente a ONG que denunció que fuerzas salvadoreñas bombardean civiles en Haití",
+          "publisher": "Diario El Mundo",
+          "url": "https://diario.elmundo.sv/politica/bukele-desmiente-a-ong-que-denuncio-que-fuerzas-salvadorenas-bombardean-civiles-en-haiti",
+          "date": "2026-10-31",
+          "type": "article"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Text read from the post itself via fxtwitter API (api.fxtwitter.com), which returns the post's own text; 20:57 UTC 31 Oct. Written in English. Quote-posts Drop Site News' summary of UNA-Haiti's open letter to Guterres."
+    },
+    {
+      "id": "2026-10-31-trump-do-what-you-have-to-do",
+      "date": "2026-10-31",
+      "speaker": "Donald Trump",
+      "role": "President of the United States",
+      "side": "international",
+      "platform": "interview",
+      "media": "video",
+      "lang": "en",
+      "text": "I did speak to him. He said that he has a big problem with Haiti... They killed some of his people. I said, 'You're running your country. You have to do what you have to do.'",
+      "translation": null,
+      "translation_by": null,
+      "url": "https://x.com/nayibbukele/status/2116700531779637748",
+      "event_id": null,
+      "sources": [
+        {
+          "title": "Bukele quote-post 'Can confirm.' of @RapidResponse47 clip",
+          "publisher": "X (@nayibbukele)",
+          "url": "https://x.com/nayibbukele/status/2116700531779637748",
+          "date": "2026-10-31",
+          "type": "x"
+        },
+        {
+          "title": "Trump dice a Bukele 'haz lo que tengas que hacer' en Haití",
+          "publisher": "Diario El Mundo",
+          "url": "https://diario.elmundo.sv/politica/trump-dice-a-bukele-haz-lo-que-tengas-que-hacer-en-haiti",
+          "date": "2026-10-31",
+          "type": "article"
+        },
+        {
+          "title": "Scoop: Trump blesses El Salvador strongman's troop surge in Haiti",
+          "publisher": "Axios",
+          "url": "https://www.axios.com/2026/10/30/trump-bukele-haiti-troop-surge",
+          "date": "2026-10-30",
+          "type": "article"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Remarks to reporters (Diario El Mundo says published by Fox). Wording is the White House @RapidResponse47 transcription of the clip, seen via the embedded quote in Bukele's post (01:15 UTC 1 Nov = evening 31 Oct in the Americas), to which Bukele replied 'Can confirm.' The ellipsis is RapidResponse47's. The URL of the RapidResponse47 post itself is not known; the url field points to Bukele's quote-post. Later (Axios, 10 Nov) a source quoted Bukele privately: 'I checked with Trump. He told me to do what we have to do, and now a bureaucrat is opposing it?' — not a public statement, so not entered separately."
+    },
+    {
+      "id": "2026-11-01-lanmo-san-jou-letter-un",
+      "date": "2026-11-01",
+      "speaker": "Wilson Joseph ('Lanmò San Jou')",
+      "role": "Leader of the 400 Mawozo gang",
+      "side": "gang",
+      "platform": "letter",
+      "media": "text",
+      "lang": "fr",
+      "text": null,
+      "translation": "Given Mr. Nayib Bukele's vengeful remarks, expectations, and threats, I fear this situation will lead to an escalation of violence and a logic of reprisals, of which the Haitian people would be the first victims. … I remain convinced that dialogue must prevail over force. … The protection of civilians, particularly children and vulnerable families, must be at the heart of any international initiative.",
+      "translation_by": "AP",
+      "url": "https://apnews.com/article/lanmo-sanjou-letter-un-gang-violence-wilson-josph-374dfb531e5c919c3139649c7d63cefe",
+      "event_id": "2026-11-01-joseph-letter-un",
+      "sources": [
+        {
+          "title": "Powerful Haitian gang leader tells AP he wrote UN seeking dialogue as clashes intensify",
+          "publisher": "AP",
+          "url": "https://apnews.com/article/lanmo-sanjou-letter-un-gang-violence-wilson-josph-374dfb531e5c919c3139649c7d63cefe",
+          "date": "2026-11-02",
+          "type": "article"
+        },
+        {
+          "title": "UN confirms it received Lanmò San Jou's letter, without endorsing it",
+          "publisher": "NAGO News",
+          "url": "https://nago.tv/en/news/lettre-attribuee-a-lanmo-san-jou-400-mawozo-demande-mediation-onu",
+          "date": "2026-11-02",
+          "type": "article"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Original-language wording not found (the letter circulated as an image on social media; language assumed French, not confirmed). 'translation' holds AP's English quotations, three separate passages joined with …. Also: 'officially raised the white flag' since 20 Aug. In his AP interview Joseph said: 'The Haitian politicians are the father of the gangs and the rebels. ... The politicians don't want this to stop.' (AP's English; interview language unknown). Kept because it is the main gang message of the period; text is null by rule."
+    },
+    {
+      "id": "2026-11-02-dujarric-letter-received",
+      "date": "2026-11-02",
+      "speaker": "Stéphane Dujarric",
+      "role": "Spokesperson for the UN Secretary-General",
+      "side": "international",
+      "platform": "statement",
+      "media": "text",
+      "lang": "en",
+      "text": "However, receipt of such a letter does not constitute endorsement of its contents, recognition of its author, or a position by the United Nations. … We want to underscore that the United Nations remains concerned that communities continue to bear the brunt of the situation in Haiti.",
+      "translation": null,
+      "translation_by": null,
+      "url": "https://apnews.com/article/lanmo-sanjou-letter-un-gang-violence-wilson-josph-374dfb531e5c919c3139649c7d63cefe",
+      "event_id": "2026-11-01-joseph-letter-un",
+      "sources": [
+        {
+          "title": "Powerful Haitian gang leader tells AP he wrote UN seeking dialogue as clashes intensify",
+          "publisher": "AP",
+          "url": "https://apnews.com/article/lanmo-sanjou-letter-un-gang-violence-wilson-josph-374dfb531e5c919c3139649c7d63cefe",
+          "date": "2026-11-02",
+          "type": "article"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Statement late Monday 2 Nov, as quoted by AP. The same statement said most Salvadoran personnel are not deployed under the GSF 'and therefore fall outside' the UN mandate and reporting, and that any security operation 'must be carried out in full accordance with applicable international law.' On 3 Nov he told reporters: 'People's rights need to be respected as you conduct security operations.'"
+    },
+    {
+      "id": "2026-11-03-bukele-helicopters-chad",
+      "date": "2026-11-03",
+      "speaker": "Nayib Bukele",
+      "role": "President of El Salvador",
+      "side": "el-salvador",
+      "platform": "x",
+      "media": "text",
+      "lang": "en",
+      "text": "Gangs were attacking GSF soldiers from Chad. We arrived quickly and repelled the attackers with our attack helicopters.\n\nThe gangs no longer have the upper hand.",
+      "translation": null,
+      "translation_by": null,
+      "url": "https://x.com/nayibbukele/status/2117773416094994924",
+      "event_id": "2026-11-03-helicopters-defend-chadian-gsf",
+      "sources": [
+        {
+          "title": "Post by @nayibbukele (quoting @infospartagesos)",
+          "publisher": "X (@nayibbukele)",
+          "url": "https://x.com/nayibbukele/status/2117773416094994924",
+          "date": "2026-11-03",
+          "type": "x"
+        },
+        {
+          "title": "Bukele afirma que helicópteros salvadoreños repelieron ataque...",
+          "publisher": "La Noticia SV",
+          "url": "https://lanoticiasv.com/bukele-afirma-que-helicopteros-salvadorenos-repelieron-ataque-de-pandillas-contra-soldados-del-gsf-en-haiti/",
+          "date": "2026-11-04",
+          "type": "article"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Text read from the post itself via fxtwitter API (api.fxtwitter.com), which returns the post's own text; 00:18 UTC 4 Nov = evening of 3 Nov in Haiti/El Salvador (the events file dates the source post 4 Nov). Written in English. Quote-posts a French-language Haitian account describing a helicopter firing over Croix-des-Bouquets at 18:16. Note the wording is 'upper hand', not 'advantage'."
+    },
+    {
+      "id": "2026-11-03-bukele-dessalines-traitors",
+      "date": "2026-11-03",
+      "speaker": "Nayib Bukele",
+      "role": "President of El Salvador",
+      "side": "el-salvador",
+      "platform": "x",
+      "media": "text",
+      "lang": "ht",
+      "text": "Pèp ayisyen,\n\nDessalines te libere Ayiti, men kèk moun ki te bò kote l te trayi l epi touye l. Moun ki te sanble avè l, ki te pale menm lang avè l, men ki pa t gen menm prensip avè l. Se te trèt ki t ap chèche sèlman avantaj pèsonèl yo, e ki te plonje Ayiti nan plizyè jenerasyon soufrans ak mizè.\n\nTrèt sa yo toujou egziste ann Ayiti. Yo pa eritye Dessalines, yo se eritye trèt ki te asasinen l yo e ki te detwi eritaj li. Genyen ki manm gang, gen lòt ki finanse gang yo oswa ki ba yo zam, e gen kèk ladan yo k ap fè tout sa yo kapab pou anpeche pèp ayisyen an jwenn libète li.\n\nWi, anpil etranje te piye Ayiti, men anpil Ayisyen te fè menm bagay la tou. Yo te kolabore ak etranje sa yo, sèvi ak zam yo, vann dwòg yo, kontwole teritwa pou yo, epi fè pèp la sibi soufrans moun pa menm ka imajine.\n\nÈske nou panse etranje sa yo t ap kapab fè tout bagay sa yo san èd moun sa yo? Kiyès k ap lonje zam sou nou? Kiyès k ap touye moun nou renmen yo? Kiyès ki vòlè kay nou ak byen nou yo, si se pa menm kalite bandi trèt ak sa yo ki te trayi epi asasinen Dessalines?\n\nNou kapab ede nou bat yo, men nou pa anvayisè. Nou se moun ki gen kouraj menm jan ak nou. Fòk nou leve kanpe, reprann kontwòl kominote nou yo, epi mete moun k ap fè nou sibi tout doulè sa yo, tout soufrans sa yo, anba kontwòl nou.\n\nN ap la menm bò kote nou. N ap ede nou reprann peyi nou anba men trèt ki trayi eritaj Dessalines yo.\n\nEpi, finalman, Ayiti ap lib.",
+      "translation": "People of Haiti,\n\nDessalines liberated Haiti, but some people who were at his side betrayed him and killed him. People who looked like him, who spoke the same language as him, but who did not have the same principles as him. They were traitors seeking only their personal advantage, and who plunged Haiti into generations of suffering and misery.\n\nThose traitors still exist in Haiti. They are not Dessalines' heirs; they are the heirs of the traitors who murdered him and destroyed his legacy. Some are gang members, others finance the gangs or give them weapons, and some of them are doing everything they can to stop the Haitian people from gaining their freedom.\n\nYes, many foreigners plundered Haiti, but many Haitians did the same thing too. They collaborated with those foreigners, used their weapons, sold their drugs, controlled territory for them, and made the people endure suffering no one can even imagine.\n\nDo you think those foreigners could have done all this without the help of these people? Who is pointing guns at you? Who is killing the people you love? Who stole your houses and your property, if not the same kind of traitorous bandits as those who betrayed and murdered Dessalines?\n\nWe can help you defeat them, but we are not invaders. We are people with courage, just like you. You must rise up, take back control of your communities, and bring under your control those who are making you endure all this pain, all this suffering.\n\nWe will be right there beside you. We will help you take back your country from the traitors who betrayed Dessalines' legacy.\n\nAnd, finally, Haiti will be free.",
+      "translation_by": "map editors (key lines match Fox News' English rendering)",
+      "url": "https://x.com/nayibbukele/status/2117793195639570570",
+      "event_id": "2026-11-03-kenscoff-residents-welcome",
+      "sources": [
+        {
+          "title": "Post by @nayibbukele",
+          "publisher": "X (@nayibbukele)",
+          "url": "https://x.com/nayibbukele/status/2117793195639570570",
+          "date": "2026-11-03",
+          "type": "x"
+        },
+        {
+          "title": "Bukele ofrece ayuda a Haití y cuestiona a los aliados de las pandillas",
+          "publisher": "El Diario de Hoy",
+          "url": "https://www.elsalvador.com/?p=1302166",
+          "date": "2026-11-04",
+          "type": "article"
+        },
+        {
+          "title": "Bukele warns Haitian gang leaders that his forces will 'finish' them",
+          "publisher": "Fox News",
+          "url": "https://www.foxnews.com/world/bukeles-warning-haitian-gang-leaders-forces-finish-el-salvador.print",
+          "date": "2026-11-04",
+          "type": "article"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Text read from the post itself via fxtwitter API (api.fxtwitter.com), which returns the post's own text; 01:36 UTC 4 Nov = evening of 3 Nov locally (NAGO dates it Tuesday 3 Nov). This is the post the events file quotes as 'We are on the same side as you... We must rise up, retake control of our communities' — those English words are a press translation, not a separate post. In Creole 'nou' is both 'we/us' and 'you'; the reading 'you must rise up … your communities' follows the context."
+    },
+    {
+      "id": "2026-11-03-waltz-mediation",
+      "date": "2026-11-03",
+      "speaker": "Mike Waltz",
+      "role": "US Ambassador to the United Nations",
+      "side": "international",
+      "platform": "x",
+      "media": "text",
+      "lang": "en",
+      "text": "Not on my bingo card: A brutal Haitian gang kingpin begging the UN for mediation because the heat got turned up by Bukele.  \n\nHow about gang leaders stop ambushing international forces, terrorizing the police, and abusing the Haitian people, and maybe then we can talk mediation.",
+      "translation": null,
+      "translation_by": null,
+      "url": "https://x.com/USAmbUN/status/2117701548767625305",
+      "event_id": "2026-11-01-joseph-letter-un",
+      "sources": [
+        {
+          "title": "Post by @USAmbUN",
+          "publisher": "X (@USAmbUN)",
+          "url": "https://x.com/USAmbUN/status/2117701548767625305",
+          "date": "2026-11-03",
+          "type": "x"
+        },
+        {
+          "title": "EEUU cuestiona petición de mediación de jefe pandillero haitiano y destaca presión de Bukele sobre bandas",
+          "publisher": "Diario El Mundo",
+          "url": "https://diario.elmundo.sv/el-mundo/eeuu-cuestiona-peticion-de-mediacion-de-jefe-pandillero-haitiano-y-destaca-presion-de-bukele-sobre-bandas",
+          "date": "2026-11-03",
+          "type": "article"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Text read from the post itself via fxtwitter API (api.fxtwitter.com), which returns the post's own text; 19:32 UTC 3 Nov. Trailing link to the AP story removed."
+    },
+    {
+      "id": "2026-11-03-fils-aime-press-conference",
+      "date": "2026-11-03",
+      "speaker": "Alix Didier Fils-Aimé",
+      "role": "Prime Minister of Haiti",
+      "side": "haiti-government",
+      "platform": "press-conference",
+      "media": "video",
+      "lang": "fr",
+      "text": null,
+      "translation": "The international force is not here to replace the state. They're here to support us. … He understands our fight. … He came to stand on the side of the Haitian people. … We are leading this fight with determination against the gangs to eradicate them. With reinforcement, the gangs won't have time to sleep. … Every armed group that is causing terror in the country, your time has almost expired.",
+      "translation_by": "AP",
+      "url": "https://www.clickondetroit.com/news/world/2026/11/03/haitis-prime-minister-fils-aime-speaks-out-as-concerns-over-el-salvadors-troops-deepen/",
+      "event_id": "2026-11-03-fils-aime-villa-accueil",
+      "sources": [
+        {
+          "title": "Haiti's prime minister Fils-Aimé speaks out as concerns over El Salvador's troops deepen",
+          "publisher": "AP via ClickOnDetroit",
+          "url": "https://www.clickondetroit.com/news/world/2026/11/03/haitis-prime-minister-fils-aime-speaks-out-as-concerns-over-el-salvadors-troops-deepen/",
+          "date": "2026-11-03",
+          "type": "article"
+        },
+        {
+          "title": "Primer ministro haitiano agradece a Bukele y confirma apoyo de fuerzas especiales salvadoreñas contra pandillas",
+          "publisher": "Diario El Mundo",
+          "url": "https://diario.elmundo.sv/politica/primer-ministro-haitiano-agradece-a-bukele-y-confirma-apoyo-de-fuerzas-especiales-salvadorenas-contra-pandillas",
+          "date": "2026-11-03",
+          "type": "article"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Original French/Creole wording not found; language of delivery assumed French (possibly mixed with Creole, e.g. the slogan 'Gang yo pap gen dòmi nan je'). AP's English quotations in 'translation'. Diario El Mundo's Spanish adds: «¡Las bandas no podrán dormir! Gánsteres con corbata, gánsteres en sandalias: todos ellos serán objeto de sanciones» and «Nuestro objetivo es claro: acabar con el dominio de las pandillas y restaurar la autoridad del Estado». Text null by rule; kept as the Haitian government's main public endorsement."
+    },
+    {
+      "id": "2026-11-06-bukele-where-is-this-house",
+      "date": "2026-11-06",
+      "speaker": "Nayib Bukele",
+      "role": "President of El Salvador",
+      "side": "el-salvador",
+      "platform": "x",
+      "media": "text",
+      "lang": "ht",
+      "text": "Kote kay sa a ye? \n\nBan nou adrès egzak la, n ap detwi l.",
+      "translation": "Where is this house?\n\nGive us the exact address, and we will destroy it.",
+      "translation_by": "The Haitian Times",
+      "url": "https://x.com/nayibbukele/status/2118798429434343447",
+      "event_id": "2026-11-06-400-mawozo-disarmament-offer",
+      "sources": [
+        {
+          "title": "Post by @nayibbukele",
+          "publisher": "X (@nayibbukele)",
+          "url": "https://x.com/nayibbukele/status/2118798429434343447",
+          "date": "2026-11-06",
+          "type": "x"
+        },
+        {
+          "title": "Mansion linked to Haiti gang leader reportedly destroyed",
+          "publisher": "The Haitian Times",
+          "url": "https://haitiantimes.com/2026/11/10/mansion-linked-haiti-gang-leader-reportedly-destroyed/",
+          "date": "2026-11-10",
+          "type": "article"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Text read from the post itself via fxtwitter API (api.fxtwitter.com), which returns the post's own text; 20:11 UTC 6 Nov. The API returned no quoted post or image, so the post showing Joseph's house that Bukele was answering is not identified here (it may have been a reply/quote the API did not expose)."
+    },
+    {
+      "id": "2026-11-06-fils-aime-one-less-gang-leader",
+      "date": "2026-11-06",
+      "speaker": "Alix Didier Fils-Aimé",
+      "role": "Prime Minister of Haiti",
+      "side": "haiti-government",
+      "platform": "x",
+      "media": "text",
+      "lang": "fr",
+      "text": "Un chef de gang en moins. \nLa lutte pour libérer le pays de l’emprise des bandits se poursuit avec détermination.\n\nGang yo pap gen dòmi nan je !",
+      "translation": "One less gang leader.\nThe fight to free the country from the grip of the bandits continues with determination.\n\nThe gangs will get no sleep!",
+      "translation_by": "map editors (Haitian Times gives a near-identical English version)",
+      "url": "https://x.com/citoyendidier/status/2118853047925551366",
+      "event_id": "2026-11-05-mathias-saintil-killed",
+      "sources": [
+        {
+          "title": "Post by @citoyendidier",
+          "publisher": "X (@citoyendidier)",
+          "url": "https://x.com/citoyendidier/status/2118853047925551366",
+          "date": "2026-11-06",
+          "type": "x"
+        },
+        {
+          "title": "Mansion linked to Haiti gang leader reportedly destroyed",
+          "publisher": "The Haitian Times",
+          "url": "https://haitiantimes.com/2026/11/10/mansion-linked-haiti-gang-leader-reportedly-destroyed/",
+          "date": "2026-11-10",
+          "type": "article"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Text read from the post itself via fxtwitter API (api.fxtwitter.com), which returns the post's own text; 23:48 UTC 6 Nov. French with a closing line in Creole ('Gang yo pap gen dòmi nan je !'). Does not name Mathias Saintil; police later confirmed he was the leader killed."
+    },
+    {
+      "id": "2026-11-09-amnesty-piquer",
+      "date": "2026-11-09",
+      "speaker": "Ana Piquer",
+      "role": "Americas Director, Amnesty International",
+      "side": "civil-society",
+      "platform": "statement",
+      "media": "text",
+      "lang": "en",
+      "text": "The Prime Minister of Haiti, Alix Didier Fils-Aimé, and the President of El Salvador, Nayib Bukele, must ensure that all operations conducted by Salvadoran forces in Haiti comply with international human rights law. The Haitian Prime Minister’s commitment not to tolerate violations must translate into effective safeguards. Both governments must make public the agreement governing the deployment and explain how they oversee the deployed forces, what rules govern the use of force, to whom they are accountable, and how people can report possible violations without fear of reprisals. … The response to gang violence must not replicate the abuses and impunity that have characterized previous interventions in Haiti.",
+      "translation": null,
+      "translation_by": null,
+      "url": "https://www.amnesty.org/en/latest/news/2026/11/haiti-los-gobiernos-de-haiti-y-el-salvador-deben-garantizar-que-el-despliegue-militar-salvadoreno-respete-los-derechos-humanos",
+      "event_id": "2026-11-09-amnesty-statement",
+      "sources": [
+        {
+          "title": "Haiti: The governments of Haiti and El Salvador must ensure that the deployment of Salvadoran military personnel respects human rights",
+          "publisher": "Amnesty International",
+          "url": "https://www.amnesty.org/en/latest/news/2026/11/haiti-los-gobiernos-de-haiti-y-el-salvador-deben-garantizar-que-el-despliegue-militar-salvadoreno-respete-los-derechos-humanos",
+          "date": "2026-11-09",
+          "type": "report"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Read on Amnesty's own English page (a Spanish version also exists; the Spanish URL slug suggests Spanish may be the drafting language). Two passages joined with …."
+    },
+    {
+      "id": "2026-11-10-bukele-we-kept-our-promise",
+      "date": "2026-11-10",
+      "speaker": "Nayib Bukele",
+      "role": "President of El Salvador",
+      "side": "el-salvador",
+      "platform": "x",
+      "media": "video",
+      "lang": "ht",
+      "text": "Nou kenbe pwomès nou…\n\nNou detwi kay Lanmò San Jou ak katye jeneral gang 400 Mawozo a.\n\nPifò ladan yo kouri ale san yo pa menm eseye goumen.\n\nAla lach yo lach! 🥲",
+      "translation": "We kept our promise…\n\nWe destroyed Lanmò San Jou's house and the headquarters of the 400 Mawozo gang.\n\nMost of them fled without even trying to fight.\n\nWhat cowards! 🥲",
+      "translation_by": "The Haitian Times",
+      "url": "https://x.com/nayibbukele/status/2120182485015474372",
+      "event_id": "2026-11-08-400-mawozo-hq-strike",
+      "sources": [
+        {
+          "title": "Post by @nayibbukele",
+          "publisher": "X (@nayibbukele)",
+          "url": "https://x.com/nayibbukele/status/2120182485015474372",
+          "date": "2026-11-10",
+          "type": "x"
+        },
+        {
+          "title": "Nayib Bukele defends Haiti gang operations, blasts US diplomat over coordination concerns",
+          "publisher": "The Haitian Times",
+          "url": "https://haitiantimes.com/2026/11/11/bukele-defends-haiti-gang-operations-amid-pressure/",
+          "date": "2026-11-11",
+          "type": "article"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Text read from the post itself via fxtwitter API (api.fxtwitter.com), which returns the post's own text and in the Haitian Times' embed; 15:51 UTC 10 Nov, 48-second helicopter video. Instagram version reportedly captioned 'Promesas cumplidas' (search snippet only)."
+    },
+    {
+      "id": "2026-11-10-fils-aime-hats-off",
+      "date": "2026-11-10",
+      "speaker": "Alix Didier Fils-Aimé",
+      "role": "Prime Minister of Haiti",
+      "side": "haiti-government",
+      "platform": "x",
+      "media": "text",
+      "lang": "ht",
+      "text": "Mwen salye angajman fòs salvadoryèn yo nan batay kont gang yo. Kontribisyon GSF, PNH, Fòs Lame Dayiti ak patnè entènasyonal yo pèmèt nou ranfòse operasyon sou teren an, reprann kontwòl teritwa a epi retabli otorite Leta. Chapo Prezidan Nayib Bukele @nayibbukele pou soutyen ak angajman w nan konbit nasyonal kont gang yo.\nAyiti, Salvador, GSF : menm konba, menm detèminasyon! Kolaborasyon an ap kontinye. \n\nGANG YO PAP GEN DOMI NAN JE !",
+      "translation": "I salute the commitment of the Salvadoran forces in the fight against the gangs. The contribution of the GSF, the PNH, the Armed Forces of Haiti and the international partners allows us to strengthen operations on the ground, retake control of territory and restore State authority. Hats off to President Nayib Bukele @nayibbukele for your support and commitment in the national konbit against the gangs.\nHaiti, El Salvador, GSF: same fight, same determination! The collaboration will continue.\n\nTHE GANGS WILL GET NO SLEEP!",
+      "translation_by": "map editors (Haitian Times gives part of it in English)",
+      "url": "https://x.com/citoyendidier/status/2120280023399637493",
+      "event_id": "2026-11-08-400-mawozo-hq-strike",
+      "sources": [
+        {
+          "title": "Post by @citoyendidier",
+          "publisher": "X (@citoyendidier)",
+          "url": "https://x.com/citoyendidier/status/2120280023399637493",
+          "date": "2026-11-10",
+          "type": "x"
+        },
+        {
+          "title": "Nayib Bukele defends Haiti gang operations, blasts US diplomat over coordination concerns",
+          "publisher": "The Haitian Times",
+          "url": "https://haitiantimes.com/2026/11/11/bukele-defends-haiti-gang-operations-amid-pressure/",
+          "date": "2026-11-11",
+          "type": "article"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Text read from the post itself via fxtwitter API (api.fxtwitter.com), which returns the post's own text; 22:18 UTC 10 Nov, posted after Bukele's 'Nou kenbe pwomès nou' video. 'Konbit' = collective work effort."
+    },
+    {
+      "id": "2026-11-10-abinader-coordinate",
+      "date": "2026-11-10",
+      "speaker": "Luis Abinader",
+      "role": "President of the Dominican Republic",
+      "side": "international",
+      "platform": "press-conference",
+      "media": "text",
+      "lang": "es",
+      "text": "Creemos que, ante la polémica que se ha presentado entre la Fuerza de Supresión de Pandillas y el Ejército salvadoreño, tienen que ponerse de acuerdo, coordinar y apoyar decididamente al Ejército salvadoreño y la actitud del presidente Bukele. … Nosotros estamos colaborando con el presidente Bukele y lo apoyamos en toda la parte de logística y de inteligencia, y lo seguiremos apoyando por el trabajo que están haciendo.",
+      "translation": "We believe that, given the controversy that has arisen between the Gang Suppression Force and the Salvadoran Army, they have to reach agreement, coordinate and decisively support the Salvadoran Army and President Bukele's stance. … We are collaborating with President Bukele and supporting him in all logistics and intelligence matters, and we will keep supporting him for the work they are doing.",
+      "translation_by": "map editors",
+      "url": "https://presidencia.gob.do/noticias/presidente-luis-abinader-expresa-respaldo-su-homologo-nayib-bukele-respecto-al-tema",
+      "event_id": null,
+      "sources": [
+        {
+          "title": "Presidente Luis Abinader expresa respaldo a su homólogo Nayib Bukele respecto al tema haitiano...",
+          "publisher": "Presidencia de la República Dominicana",
+          "url": "https://presidencia.gob.do/noticias/presidente-luis-abinader-expresa-respaldo-su-homologo-nayib-bukele-respecto-al-tema",
+          "date": "2026-11-10",
+          "type": "article"
+        },
+        {
+          "title": "Presidente dominicano reitera respaldo a presencia salvadoreña en Haití pero pide coordinación con Fuerza multinacional",
+          "publisher": "Diario El Mundo",
+          "url": "https://diario.elmundo.sv/politica/presidente-dominicano-reitera-respaldo-a-presencia-salvadorena-en-haiti-pero-pide-coordinacion-con-fuerza-multinacional",
+          "date": "2026-11-10",
+          "type": "article"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Remarks to presidential-beat reporters in Santo Domingo, 10 Nov. First sentence from Diario El Mundo; second from the Dominican presidency's own release (El Mundo has a slightly different transcription: 'colaborando al presidente (Nayib) Bukele … toda la parte logística'). No matching event in events.js."
+    },
+    {
+      "id": "2026-11-10-ulloa-mediation-unacceptable",
+      "date": "2026-11-10",
+      "speaker": "Félix Ulloa",
+      "role": "Vice President of El Salvador",
+      "side": "el-salvador",
+      "platform": "interview",
+      "media": "text",
+      "lang": "es",
+      "text": "O sea, es darle titularidad a la delincuencia, porque con eso lo que estás haciendo es legitimándolos cuando lo que debés hacer es decirles: ustedes lo que deben hacer es irse a la cárcel y pagar por todos los delitos que han cometido y no decirles 'bueno, vamos a ver en qué condiciones podemos hablar', eso es inaceptable. … Si no nos lo entregan, vamos a continuar ahí.",
+      "translation": "In other words, it is giving standing to crime, because by doing that you are legitimising them, when what you should do is tell them: what you must do is go to prison and pay for all the crimes you have committed — not tell them 'well, let's see under what conditions we can talk'. That is unacceptable. … If they do not hand them over to us, we will stay there.",
+      "translation_by": "map editors",
+      "url": "https://diario.elmundo.sv/politica/vicepresidente-de-el-salvador-ve-inaceptable-considerar-mediacion-de-la-onu-con-pandillas-en-haiti",
+      "event_id": null,
+      "sources": [
+        {
+          "title": "Vicepresidente de El Salvador ve 'inaceptable' considerar mediación de la ONU con pandillas en Haití",
+          "publisher": "Diario El Mundo",
+          "url": "https://diario.elmundo.sv/politica/vicepresidente-de-el-salvador-ve-inaceptable-considerar-mediacion-de-la-onu-con-pandillas-en-haiti",
+          "date": "2026-11-10",
+          "type": "article"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Interview with Elena Berberana, reported 10 Nov (interview date may be earlier). Ulloa was answering Waltz's 3 Nov post on Lanmò San Jou's request for UN mediation. Wording as transcribed by Diario El Mundo."
+    },
+    {
+      "id": "2026-11-12-bukele-stadium-base",
+      "date": "2026-11-12",
+      "speaker": "Nayib Bukele",
+      "role": "President of El Salvador",
+      "side": "el-salvador",
+      "platform": "tiktok",
+      "media": "video",
+      "lang": "es",
+      "text": "En el marco del acuerdo bilateral entre los gobiernos de Haití y El Salvador, se realizó una operación conjunta entre la Policía Nacional de Haití, las Fuerzas Armadas de Haití (FAd’H), la Task Force y las Fuerzas Especiales salvadoreñas, mediante la cual se logró recuperar el control del Estadio Sylvio Cator y asegurar sus instalaciones.\n\nDurante la operación, se descubrieron varias osamentas humanas dentro del estadio.\n\nEstableceremos una base de operaciones en el estadio para avanzar desde allí hacia los territorios controlados por las pandillas. Ahora tenemos la ventaja sobre el terreno.\n\nLes aconsejo a todos los miembros de las pandillas que abandonen la zona antes de que comience la ofensiva. Quienes elijan permanecer y combatir a nuestras fuerzas tendrán que asumir las consecuencias.",
+      "translation": "Within the framework of the bilateral agreement between the governments of Haiti and El Salvador, a joint operation was carried out by the Haitian National Police, the Armed Forces of Haiti (FAd'H), the Task Force and Salvadoran Special Forces, through which control of the Sylvio Cator Stadium was recovered and its facilities secured.\n\nDuring the operation, several human skeletal remains were discovered inside the stadium.\n\nWe will establish a base of operations at the stadium to advance from there into gang-controlled territories. We now have the advantage on the ground.\n\nI advise all gang members to leave the area before the offensive begins. Those who choose to remain and fight our forces will have to assume the consequences.",
+      "translation_by": "map editors (last two paragraphs match the Haitian Times' English translation)",
+      "url": "https://www.tiktok.com/@nayibbukele/video/7707453316774513972",
+      "event_id": "2026-11-12-stade-sylvio-cator-retaken",
+      "sources": [
+        {
+          "title": "TikTok video by @nayibbukele",
+          "publisher": "TikTok (@nayibbukele)",
+          "url": "https://www.tiktok.com/@nayibbukele/video/7707453316774513972",
+          "date": "2026-11-12",
+          "type": "video"
+        },
+        {
+          "title": "Haiti, Salvadoran forces retake Sylvio Cator Stadium from gangs, Bukele says",
+          "publisher": "The Haitian Times",
+          "url": "https://haitiantimes.com/2026/11/12/haiti-el-salvador-forces-retake-sylvio-cator-stadium/",
+          "date": "2026-11-12",
+          "type": "article"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Caption read from the TikTok page's own data (the short link tiktok.com/t/ZPL7p2VRA resolves to this video); createTime 00:55 UTC 13 Nov = evening of 12 Nov locally. Paragraph breaks added by map editors. The same text was probably also posted on X (the Haitian Times says 'social media'); no X post ID found. Spoken audio of the video not checked."
+    },
+    {
+      "id": "2026-11-16-ulloa-agreement-not-public",
+      "date": "2026-11-16",
+      "speaker": "Félix Ulloa",
+      "role": "Vice President of El Salvador",
+      "side": "el-salvador",
+      "platform": "press-conference",
+      "media": "video",
+      "lang": "es",
+      "text": "Un operativo militar, por su propia naturaleza no se discute públicamente, no se puede revelar cuáles son las tácticas, las estrategias de las operaciones militares. … Así que no, no te vamos a decir cuál es ese convenio, no lo vamos a revelar hasta que las condiciones diplomáticas lo permitan para hacerlo público. … toda la estrategia y todo el operativo tiene una sola finalidad, traer a nuestros compatriotas.",
+      "translation": "A military operation, by its very nature, is not discussed publicly; you cannot reveal the tactics or strategies of military operations. … So no, we are not going to tell you what that agreement is; we will not reveal it until diplomatic conditions allow it to be made public. … the whole strategy and the whole operation has a single purpose: to bring our compatriots home.",
+      "translation_by": "map editors",
+      "url": "https://diario.elmundo.sv/politica/vicepresidente-de-el-salvador-dice-no-divulgaran-acuerdo-bilateral-con-haiti-hasta-que-haya-condiciones-diplomaticas",
+      "event_id": "2026-11-16-pelissier-san-salvador",
+      "sources": [
+        {
+          "title": "Vicepresidente de El Salvador dice no divulgarán acuerdo bilateral con Haití hasta que haya condiciones diplomáticas",
+          "publisher": "Diario El Mundo",
+          "url": "https://diario.elmundo.sv/politica/vicepresidente-de-el-salvador-dice-no-divulgaran-acuerdo-bilateral-con-haiti-hasta-que-haya-condiciones-diplomaticas",
+          "date": "2026-11-16",
+          "type": "article"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Press conference after the opening of the Conferencia Internacional sobre Estado y Democracia, San Salvador, morning of 16 Nov, as transcribed by Diario El Mundo. He also said: «No era el objetivo ir a combatir las pandillas. El objetivo era ir a rescatar a nuestros compatriotas … hemos ocupado el Estadio» and «Cuando se expresan estas preocupaciones hay una agenda oculta de querer criticar a la operación nuestra»."
+    },
+    {
+      "id": "2026-11-16-villatoro-we-leave",
+      "date": "2026-11-16",
+      "speaker": "Gustavo Villatoro",
+      "role": "Minister of Justice and Public Security, El Salvador",
+      "side": "el-salvador",
+      "platform": "press-conference",
+      "media": "text",
+      "lang": "es",
+      "text": "Si el día de mañana aparecen [los aerotécnicos desaparecidos], como lo decía el presidente Bukele, nosotros nos venimos.",
+      "translation": "If tomorrow they [the missing aviation technicians] reappear, as President Bukele said, we come home.",
+      "translation_by": "map editors",
+      "url": "https://www.laprensani.com/2026/11/16/ultima-hora/3813165-el-salvador-retirara-sus-tropas-de-haiti-cuando-terminen-su-mision",
+      "event_id": "2026-11-16-pelissier-san-salvador",
+      "sources": [
+        {
+          "title": "El Salvador retirará sus tropas de Haití cuando terminen su misión",
+          "publisher": "Deutsche Welle via La Prensa (Nicaragua)",
+          "url": "https://www.laprensani.com/2026/11/16/ultima-hora/3813165-el-salvador-retirara-sus-tropas-de-haiti-cuando-terminen-su-mision",
+          "date": "2026-11-16",
+          "type": "article"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Said to reporters at the same San Salvador event attended by Haitian Justice Minister Patrick Pélissier. Bracketed words are DW's insertion. Pélissier's own remarks (YSKL interview, Infobae) are reported only in Spanish rendering ('La situación está cambiando'; 'Hasta ahora no hay bajas reportadas por el Gobierno'), original language unknown, so not entered."
+    },
+    {
+      "id": "2026-11-17-bukele-i-hear-you",
+      "date": "2026-11-17",
+      "speaker": "Nayib Bukele",
+      "role": "President of El Salvador",
+      "side": "el-salvador",
+      "platform": "x",
+      "media": "video",
+      "lang": "ht",
+      "text": "Mwen pa t janm atann yon bagay konsa.\n\nMwen tande nou byen fò, byen klè.\n\nMwen renmen nou tou.\n\nN ap triyonfe. Bondye ap ban nou laviktwa.",
+      "translation": "I never expected something like this.\n\nI hear you loud and clear.\n\nI love you too.\n\nWe will triumph. God will give us victory.",
+      "translation_by": "The Haitian Times",
+      "url": "https://x.com/nayibbukele/status/2122852551926141400",
+      "event_id": "2026-11-17-merci-bukele-march",
+      "sources": [
+        {
+          "title": "Post by @nayibbukele",
+          "publisher": "X (@nayibbukele)",
+          "url": "https://x.com/nayibbukele/status/2122852551926141400",
+          "date": "2026-11-17",
+          "type": "x"
+        },
+        {
+          "title": "Bukele strikes gang leader's home on Vertières Day",
+          "publisher": "The Haitian Times",
+          "url": "https://haitiantimes.com/2026/11/18/bukele-strikes-gang-leader-home-vertieres-day/",
+          "date": "2026-11-18",
+          "type": "article"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Text read from the post itself via fxtwitter API (api.fxtwitter.com), which returns the post's own text; 00:41 UTC 18 Nov = evening of 17 Nov locally, with a 90-second video of the marches. The post does NOT contain 'Mwen renmen nou tou…' as its opening as the events file implies; the exact order is 'Mwen pa t janm atann…', 'Mwen tande nou byen fò, byen klè', 'Mwen renmen nou tou'."
+    },
+    {
+      "id": "2026-11-17-ohchr-hurtado",
+      "date": "2026-11-17",
+      "speaker": "Marta Hurtado",
+      "role": "Spokesperson, UN Office of the High Commissioner for Human Rights",
+      "side": "international",
+      "platform": "press-conference",
+      "media": "video",
+      "lang": "en",
+      "text": "The Government needs to ensure that all security operations are firmly grounded in and conducted in compliance with international human rights law.",
+      "translation": null,
+      "translation_by": null,
+      "url": "https://news.un.org/en/story/2026/11/1168823",
+      "event_id": "2026-11-17-ohchr-warning",
+      "sources": [
+        {
+          "title": "UN News story on OHCHR Haiti briefing",
+          "publisher": "UN News",
+          "url": "https://news.un.org/en/story/2026/11/1168823",
+          "date": "2026-11-17",
+          "type": "article"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Geneva briefing as quoted by UN News. High Commissioner Volker Türk's call to forces 'whether under the Gang Suppression Force – or outside its framework' is reported by UN News only in indirect speech, so not entered as text."
+    },
+    {
+      "id": "2026-11-18-bukele-vertieres-gift",
+      "date": "2026-11-18",
+      "speaker": "Nayib Bukele",
+      "role": "President of El Salvador",
+      "side": "el-salvador",
+      "platform": "x",
+      "media": "video",
+      "lang": "ht",
+      "text": "Kado mwen pou pèp ayisyen an nan anivèsè Batay Vètyè a ❤️",
+      "translation": "My gift to the Haitian people on the anniversary of the Battle of Vertières ❤️",
+      "translation_by": "AP / The Haitian Times",
+      "url": "https://x.com/nayibbukele/status/2123060372026331180",
+      "event_id": "2026-11-18-canaan-jeff-mansion-strike",
+      "sources": [
+        {
+          "title": "Post by @nayibbukele",
+          "publisher": "X (@nayibbukele)",
+          "url": "https://x.com/nayibbukele/status/2123060372026331180",
+          "date": "2026-11-18",
+          "type": "x"
+        },
+        {
+          "title": "El Salvador's president confirms and celebrates attack on home of key Haitian gang leader",
+          "publisher": "AP via WRAL",
+          "url": "https://www.wral.com/news/ap/4397a-el-salvadors-president-confirms-and-celebrates-attack-on-home-of-key-haitian-gang-leader/",
+          "date": "2026-11-18",
+          "type": "article"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Text read from the post itself via fxtwitter API (api.fxtwitter.com), which returns the post's own text; 14:26 UTC 18 Nov, 49-second strike video. The caption names neither Jeff Larose nor Canaan."
+    }
+  ],
   "control_areas": [
     {
       "name": "Downtown: Stade Sylvio Cator",

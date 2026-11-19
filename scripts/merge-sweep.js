@@ -8,7 +8,8 @@
      "updates":       [ { "id": "existing-event-id", "set": { "casualties": {...}, "notes": "..." },
                           "add_sources": [ {...} ] } ],
      "territory":     [ ...new dated territory entries (circles)... ],
-     "control_areas": [ ...new dated outlines, e.g. status "liberated"... ]
+     "control_areas": [ ...new dated outlines, e.g. status "liberated"... ],
+     "messages":      [ ...verbatim statements and posts (see ops/daily-news-sweep.md)... ]
    }
    Events whose id already exists are skipped (use "updates" to change them). meta.end and meta.compiled move to
    --date (default: today, UTC). Run scripts/validate.js afterwards. */
@@ -60,6 +61,9 @@ data.territory = (data.territory || []).concat(tNew);
 const cHave = new Set((data.control_areas || []).map(key));
 const cNew = (sweep.control_areas || []).filter(a => !cHave.has(key(a)));
 data.control_areas = (data.control_areas || []).concat(cNew);
+const mHave = new Set((data.messages || []).map(m => m.id));
+const mNew = (sweep.messages || []).filter(m => !mHave.has(m.id));
+data.messages = (data.messages || []).concat(mNew).sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0));
 
 data.events.sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0));
 const latest = data.events.reduce((m, e) => (e.date > m ? e.date : m), data.meta.end || today);
@@ -68,9 +72,10 @@ data.meta.compiled = today;
 
 // Keep the key order: meta, events, control_areas, territory, then anything else.
 const ordered = { meta: data.meta, events: data.events };
+if (data.messages.length) ordered.messages = data.messages;
 if (data.control_areas.length) ordered.control_areas = data.control_areas;
 ordered.territory = data.territory;
 Object.keys(data).forEach(k => { if (!(k in ordered)) ordered[k] = data[k]; });
 fs.writeFileSync(FILE, header + startMarker + JSON.stringify(ordered, null, 2) + ';\n');
 console.log('events added ' + added + ', already present ' + skipped + ', updated ' + updated +
-  '; territory added ' + tNew.length + '; control areas added ' + cNew.length + '; meta.end ' + data.meta.end);
+  '; territory added ' + tNew.length + '; control areas added ' + cNew.length + '; messages added ' + mNew.length + '; meta.end ' + data.meta.end);

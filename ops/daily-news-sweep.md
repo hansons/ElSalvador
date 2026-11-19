@@ -54,6 +54,23 @@ Rules:
 
 **The marches and the public response:** when a march or celebration happens, note in `notes` whether it took place in a liberated, contested, gang-held or never-held area, from the territory data.
 
+**Messages: what the key voices said.** Readers see these as cards that slide in on the map on the day they were said. Record them in the sweep file's `messages` list:
+
+```
+{ "id": "YYYY-MM-DD-speaker-slug", "date": "YYYY-MM-DD", "speaker": "Nayib Bukele", "role": "President of El Salvador",
+  "side": "el-salvador | security-forces | haiti-government | gang | international | civil-society",
+  "platform": "x | tiktok | youtube | video | speech | press-conference | statement | interview | letter",
+  "media": "text | video", "lang": "es | en | fr | ht", "text": "the speaker's own words",
+  "translation": "English, or null if the original is English", "translation_by": "the source, or 'map editors'",
+  "url": "the post or video itself if known, else the best article", "event_id": "matching event id, or null",
+  "sources": [ ... ], "confidence": "high | medium | low", "notes": "where you saw the wording" }
+```
+
+- **Every Bukele post, video or statement about Haiti** goes in. He is the reason this map exists.
+- Others only when the message moved events or answers the campaign directly. Examples: Haiti's PM, the PNH or GSF command, Salvadoran ministers, the UN Secretary-General or BINUH, the US, gang leaders' videos (Lanmò San Jou, Chérizier, Jeff Larose), RNDDH or Amnesty responding to the operations.
+- `text` must be the speaker's **verbatim** words, an excerpt marked with … if cut, in the original language. If you have only a reporter's paraphrase, do not add a message: put the paraphrase in the event's summary instead. Translations you make yourself are labelled `"translation_by": "map editors"`.
+- Link the message to its event with `event_id` when there is one. Gang videos are recorded as what they claim, not as fact.
+
 **Withdrawal watch (standing order from the founder).** If any source reports that El Salvador has withdrawn its forces from Haiti, announced a withdrawal or an end date, or substantially drawn down, record it as an event as usual **and** put this at the very top of `ops/review-queue.md`, above everything else:
 
 ```

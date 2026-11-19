@@ -79,6 +79,25 @@ function checkDataset(file, key, cats, opts) {
     if (typeof z.lat !== 'number' || typeof z.lon !== 'number') err(at, 'needs lat and lon');
     if (typeof z.radius_km !== 'number' || z.radius_km <= 0 || z.radius_km > 30) err(at, 'radius_km must be a number between 0 and 30');
   });
+  const SIDES = ['el-salvador', 'security-forces', 'haiti-government', 'gang', 'international', 'civil-society'];
+  const PLATFORMS = ['x', 'tiktok', 'youtube', 'video', 'speech', 'press-conference', 'statement', 'interview', 'letter'];
+  const mids = new Set();
+  (d.messages || []).forEach((m, i) => {
+    const at = file + ' message ' + (m && m.id ? m.id : '#' + i);
+    if (!m || typeof m !== 'object') return err(at, 'not an object');
+    ['id', 'date', 'speaker', 'side', 'platform', 'url', 'confidence'].forEach(k => { if (!m[k]) err(at, 'missing ' + k); });
+    if (mids.has(m.id)) err(at, 'duplicate id'); mids.add(m.id);
+    if (!validDate(m.date)) err(at, 'bad date ' + m.date);
+    else if (meta.end && m.date > meta.end) err(at, 'dated after meta.end (' + meta.end + ')');
+    if (!m.text && !m.translation) err(at, 'needs text (verbatim) or, failing that, a reported translation');
+    else if (!m.text) warn(at, 'only a reported translation: shown with a note that the original was not published');
+    if (m.side && SIDES.indexOf(m.side) < 0) err(at, 'side must be ' + SIDES.join(', '));
+    if (m.platform && PLATFORMS.indexOf(m.platform) < 0) err(at, 'platform must be ' + PLATFORMS.join(', '));
+    if (m.url && !/^https?:\/\//.test(m.url)) err(at, 'url must be http(s)');
+    if (m.confidence && CONF.indexOf(m.confidence) < 0) err(at, 'confidence must be high, medium or low');
+    if (m.event_id && !ids.has(m.event_id)) err(at, 'event_id ' + m.event_id + ' is not an event in this file');
+    if (m.lang && m.lang !== 'en' && m.text && !m.translation) warn(at, 'not in English and has no translation');
+  });
   (d.control_areas || []).forEach((a, i) => {
     const at = file + ' control_area ' + (a.name || '#' + i) + ' ' + (a.as_of || '');
     if (!a.name) err(at, 'missing name');

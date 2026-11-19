@@ -28,6 +28,7 @@
     </div>
 
     <div id="viewbtns" class="viewbtns" role="group" aria-label="Map view"></div>
+    <div id="messages" class="messages" aria-live="polite" aria-label="What was said"></div>
   </main>
 
   <section class="transport" aria-label="Timeline">
@@ -68,6 +69,7 @@
           <option value="1">This day only</option>
         </select>
       </label>
+      <label class="check"><input id="show-messages" type="checkbox" checked> Messages</label>
       <label class="check"><input id="territory" type="checkbox" checked> Gang territory (approximate)</label>
       <span class="zone-key" aria-label="Territory key">
         <span><i class="sw sw-nogo"></i>No-go zone</span>

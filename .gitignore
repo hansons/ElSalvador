@@ -9,3 +9,6 @@ COUNCIL.md
 Thumbs.db
 .DS_Store
 node_modules/
+
+# The council board and its records (private)
+council/
