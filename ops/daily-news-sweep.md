@@ -54,6 +54,16 @@ Rules:
 
 **The marches and the public response:** when a march or celebration happens, note in `notes` whether it took place in a liberated, contested, gang-held or never-held area, from the territory data.
 
+**Withdrawal watch (standing order from the founder).** If any source reports that El Salvador has withdrawn its forces from Haiti, announced a withdrawal or an end date, or substantially drawn down, record it as an event as usual **and** put this at the very top of `ops/review-queue.md`, above everything else:
+
+```
+## FOUNDER DECISION NEEDED: El Salvador leaving Haiti (YYYY-MM-DD)
+<what was reported, by whom, with links>. The founder asked to be told: decide whether the Haiti feature
+closes as a finished chapter or stays open (charter action A-10).
+```
+
+Say so in your final summary too. Do this even when the report is a single source or an unconfirmed claim, and label it as such.
+
 ## 4. Write, merge, check
 
 1. Write what you found to `ops/sweeps/YYYY-MM-DD.json` (format at the top of `scripts/merge-sweep.js`).
