@@ -1,0 +1,11 @@
+# Kept on the local machine only: working notes and internal documents.
+research/
+exports/
+COUNCIL.md
+.vscode/
+.claude/
+
+# OS and editor clutter
+Thumbs.db
+.DS_Store
+node_modules/

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Haiti campaign tracker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+
+  <main class="stage">
+    <div id="map" aria-label="Map of events in Haiti"></div>
+
+    <div class="masthead">
+      <nav id="theatres" class="theatres" aria-label="Choose map"></nav>
+      <h1 id="title">Haiti campaign tracker</h1>
+      <p id="subtitle"></p>
+      <div class="clock" aria-live="polite">
+        <span id="clock-date">—</span>
+        <span id="clock-day"></span>
+      </div>
+      <div id="legend" class="legend" role="group" aria-label="Show or hide categories"></div>
+    </div>
+
+    <div id="viewbtns" class="viewbtns" role="group" aria-label="Map view"></div>
+  </main>
+
+  <section class="transport" aria-label="Timeline">
+    <div class="transport-row">
+      <button id="play" type="button" class="play" aria-label="Play">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path id="play-icon" d="M7 4l14 8-14 8z"/></svg>
+      </button>
+      <div class="timeline">
+        <div class="bars-wrap">
+          <svg id="bars" preserveAspectRatio="none" aria-hidden="true"></svg>
+          <div id="future" class="future"></div>
+          <input id="scrub" type="range" min="0" max="1" step="0.01" value="0" aria-label="Date">
+        </div>
+        <div id="axis" class="axis" aria-hidden="true"></div>
+      </div>
+    </div>
+    <div class="transport-opts">
+      <label>Speed
+        <select id="speed">
+          <option value="0.5">½ day / s</option>
+          <option value="1" selected>1 day / s</option>
+          <option value="2">2 days / s</option>
+          <option value="4">4 days / s</option>
+          <option value="8">8 days / s</option>
+          <option value="30">30 days / s</option>
+          <option value="120">120 days / s</option>
+          <option value="365">1 year / s</option>
+        </select>
+      </label>
+      <label>Period
+        <select id="range"></select>
+      </label>
+      <label>Show
+        <select id="window">
+          <option value="all" selected>Everything so far</option>
+          <option value="365">Last 12 months</option>
+          <option value="7">Last 7 days</option>
+          <option value="1">This day only</option>
+        </select>
+      </label>
+      <label class="check"><input id="territory" type="checkbox" checked> Gang territory (approximate)</label>
+      <span class="zone-key" aria-label="Territory key">
+        <span><i class="sw sw-nogo"></i>No-go zone</span>
+        <span><i class="sw sw-ctl"></i>Gang-controlled</span>
+        <span><i class="sw sw-con"></i>Contested</span>
+        <span><i class="sw sw-lib"></i>Liberated</span>
+      </span>
+      <span class="hint">Space plays · ← → step a day</span>
+    </div>
+  </section>
+
+  <aside class="panel" aria-label="Events">
+    <div id="feed" class="feed"></div>
+    <div id="detail" class="detail" hidden></div>
+  </aside>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="data/events.js"></script>
+<script src="data/haiti-before.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
