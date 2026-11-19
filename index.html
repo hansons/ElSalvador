@@ -11,6 +11,14 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <pattern id="op-hatch" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="9" height="9" fill="rgba(76,141,246,.10)"/>
+      <rect width="3" height="9" fill="rgba(143,184,255,.55)"/>
+    </pattern>
+  </defs>
+</svg>
 <div class="app">
 
   <main class="stage">
@@ -75,6 +83,7 @@
         <span><i class="sw sw-nogo"></i>No-go zone</span>
         <span><i class="sw sw-ctl"></i>Gang-controlled</span>
         <span><i class="sw sw-con"></i>Contested</span>
+        <span><i class="sw sw-ops"></i>Salvadoran operations under way</span>
         <span><i class="sw sw-lib"></i>Liberated</span>
       </span>
       <span class="hint">Space plays · ← → step a day</span>

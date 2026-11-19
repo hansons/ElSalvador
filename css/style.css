@@ -122,6 +122,8 @@ button, select, input { font: inherit; color: inherit; }
 .sw-nogo { background: rgba(193, 39, 45, .75); border: 1.5px solid #FF9A9D; }
 .sw-ctl { background: rgba(229, 72, 77, .28); border: 1px solid rgba(229, 72, 77, .8); }
 .sw-con { border: 1.5px dashed #F5B83D; }
+.sw-ops { background: repeating-linear-gradient(45deg, rgba(143,184,255,.7) 0 3px, rgba(76,141,246,.12) 3px 7px); border: 1.5px dashed #8FB8FF; }
+path.op-zone { fill: url(#op-hatch); }
 .sw-lib { background: rgba(76, 141, 246, .6); border: 1.5px solid #8FB8FF; }
 .control-pop { font-size: 12.5px; line-height: 1.4; }
 .control-pop p { margin: 6px 0; }

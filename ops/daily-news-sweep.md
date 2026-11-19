@@ -52,6 +52,8 @@ Rules:
 - A `liberated` outline goes in `control_areas`: `{ "name", "as_of", "status": "liberated", "polygon": [[[lat, lon], ...]], "sources", "confidence", "notes" }`. Draw it around what the sources name: a stadium and its blocks, a neighbourhood, a road. Never draw a whole commune because one site in it was retaken. To grow an existing liberated area, add a new outline with the same `name` and a later `as_of`.
 - If gangs retake an area, record it: a `territory` entry `gang-held` or `contested`, and for a liberated outline a new entry with the same name, a later `as_of` and status `ended`.
 
+**Salvadoran operations under way.** The map draws a blue-striped "operations under way" zone automatically around every `military` event whose `actor` or `title` names El Salvador and whose `location_precision` is landmark, neighbourhood or commune. A no-go zone it falls in is drawn as breaking. So: name the Salvadorans in `actor` (e.g. "El Salvador" or "El Salvador, PNH") when they took part, and pin the event where it happened. Add `"operation": false` to an event that names El Salvador but is not an operation on the ground (e.g. a speech held at a base), or `"operation": { "radius_km": 2 }` to widen a large operation. This is not liberation: that still needs the rule below.
+
 **The marches and the public response:** when a march or celebration happens, note in `notes` whether it took place in a liberated, contested, gang-held or never-held area, from the territory data.
 
 **Messages: what the key voices said.** Readers see these as cards that slide in on the map on the day they were said. Record them in the sweep file's `messages` list:

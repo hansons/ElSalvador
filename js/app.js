@@ -203,6 +203,7 @@
   // Control areas sit under the territory circles: the broad gang-controlled shading first, no-go zones above it.
   map.createPane('control').style.zIndex = 350;
   map.createPane('nogo').style.zIndex = 360;
+  map.createPane('ops').style.zIndex = 365;
   map.createPane('liberated').style.zIndex = 370;
   var controlLayer = L.layerGroup().addTo(map);
   var territoryLayer = L.layerGroup().addTo(map);
@@ -301,6 +302,76 @@
     }
     return o;
   });
+
+  // ---------- Salvadoran operations: the gang shading starts to give way where they have gone in ----------
+  // Derived from events, not drawn by hand: a military event whose actor or title names El Salvador and whose place
+  // is known to neighbourhood level or better. An event can opt in or out with "operation": { "radius_km": n } | false.
+  // The zone shows from the first operation, and the red under it fades further with each operation recorded there.
+  // It never means liberated: that stays a sourced control_areas outline.
+  var OP_RADIUS = { landmark: 0.7, neighbourhood: 1.2, commune: 2 };
+  function isSalvadoranOp(e) {
+    if (e.operation === false || !e.hasLoc) return false;
+    if (e.operation) return true;
+    return e.category === 'military' && /salvador/i.test((e.actor || '') + ' ' + e.title) && OP_RADIUS[e.location_precision] !== undefined;
+  }
+  function kmBetween(a, b) {
+    var dy = (a[0] - b[0]) * 111.2, dx = (a[1] - b[1]) * 111.2 * Math.cos(a[0] * Math.PI / 180);
+    return Math.sqrt(dx * dx + dy * dy);
+  }
+  var opZones = [];
+  if (THEATRE_ID === 'haiti') {
+    events.filter(isSalvadoranOp).forEach(function (e) {
+      var r = (e.operation && e.operation.radius_km) || OP_RADIUS[e.location_precision] || 1;
+      var c = [e.lat, e.lon];
+      var z = opZones.filter(function (z) { return kmBetween(z.center, c) < Math.max(z.radius, r) * 0.8; })[0];
+      if (z) { z.ops.push(e); z.radius = Math.max(z.radius, r); }
+      else opZones.push({ center: c, radius: r, ops: [e] });
+    });
+    opZones.forEach(function (z) {
+      z.day = z.ops[0].day;
+      z.knock = L.circle(z.center, { pane: 'ops', radius: z.radius * 1000, stroke: false, fillColor: '#0b121b', fillOpacity: 0.4, interactive: false });
+      z.hatch = L.circle(z.center, { pane: 'ops', radius: z.radius * 1000, color: '#8FB8FF', weight: 1.5, opacity: 0.9, dashArray: '5 4', fillOpacity: 1, className: 'op-zone' });
+      z.hatch.on('click', function () { select(z.lastShown ? z.lastShown.id : z.ops[0].id, false); });
+      z.layer = L.layerGroup([z.knock, z.hatch]);
+    });
+  }
+  function pointInRing(p, ring) {
+    var inside = false;
+    for (var i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+      var yi = ring[i][0], xi = ring[i][1], yj = ring[j][0], xj = ring[j][1];
+      if (((yi > p[0]) !== (yj > p[0])) && (p[1] < (xj - xi) * (p[0] - yi) / (yj - yi) + xi)) inside = !inside;
+    }
+    return inside;
+  }
+  function areaHasOpBy(a, day) {
+    return opZones.some(function (z) {
+      return z.day <= day && a.polygon && a.polygon.some(function (ring) { return pointInRing(z.center, ring); });
+    });
+  }
+  function renderOps(day) {
+    opZones.forEach(function (z) {
+      var done = z.ops.filter(function (e) { return e.day <= day; });
+      var show = state.territory && done.length > 0;
+      var on = controlLayer.hasLayer(z.layer);
+      if (show && !on) controlLayer.addLayer(z.layer);
+      if (!show && on) controlLayer.removeLayer(z.layer);
+      if (!show) return;
+      if (z.lastShown === done[done.length - 1]) return;
+      z.lastShown = done[done.length - 1];
+      z.knock.setStyle({ fillOpacity: Math.min(0.7, 0.35 + 0.1 * (done.length - 1)) });
+      z.hatch.unbindTooltip().bindTooltip(
+        'Salvadoran operations under way since ' + longDate(z.day) + ' · ' + done.length + ' recorded' +
+        ' (latest: ' + z.lastShown.title + '). Not yet liberated: no source says the area is held.', { sticky: true });
+    });
+    // A no-go zone that Salvadoran forces have gone into is drawn as breaking: lighter fill, dashed edge.
+    controlAreas.forEach(function (a) {
+      if (!a.shape || a.status !== 'no-go') return;
+      var hit = areaHasOpBy(a, day);
+      if (a._breaking === hit) return;
+      a._breaking = hit;
+      a.shape.setStyle(hit ? { fillOpacity: 0.25, dashArray: '6 5' } : { fillOpacity: CONTROL_STYLE['no-go'].fillOpacity, dashArray: null });
+    });
+  }
 
   // ---------- messages: what the key voices said, as cards that slide in when the clock reaches them ----------
   // DATA.messages: [{ id, date, speaker, role, side, platform, media, lang, text (verbatim), translation,
@@ -453,6 +524,7 @@
       if (!show && on) controlLayer.removeLayer(a.shape);
     });
 
+    renderOps(day);
     renderMessages(day);
     renderFactsCount(day);
     if (!state.selected) renderFeed(day);
@@ -952,6 +1024,7 @@
     if (!messages.length) $('show-messages').parentNode.hidden = true;
     if (!controlAreas.length) document.querySelector('.zone-key').hidden = true;
     if (!controlAreas.some(function (a) { return a.status === 'liberated'; })) document.querySelector('.sw-lib').parentNode.hidden = true;
+    if (!opZones.length) document.querySelector('.sw-ops').parentNode.hidden = true;
     $('scrub').addEventListener('input', function (ev) { setPlaying(false); seek(state.range.start + (+ev.target.value)); });
     $('scrub').addEventListener('change', writeUrl);
 
